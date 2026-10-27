@@ -1,0 +1,59 @@
+ARC Prize 2026 entry: NVARC-style ARC-AGI-2 kernels, rerun statistics and heuristic solvers
+Copyright (c) 2026 Dam Solanke
+
+This repository holds code under two licences.
+
+MIT-0 (LICENSE)
+  Code written for this project: src/, tests/, scripts/, paper/make_figures.py,
+  kaggle_kernel/arc_prize_2026_baseline.py, and our changes to the notebooks in
+  kaggle_kernel/arc_agi2_*/. The first cell of each notebook lists those changes.
+
+Apache License, Version 2.0 (LICENSES/Apache-2.0.txt)
+  All other code in the notebooks under kaggle_kernel/arc_agi2_*/. It comes from
+  the work credited below and stays under the Apache License 2.0.
+
+
+Third-party code
+----------------
+
+The ARChitects (Daniel Franzen and Jan Disselhoff)
+  ARC Prize 2024 submission code, https://github.com/da-fr/arc-prize-2024,
+  Apache License 2.0. NVARC's notebook, and through it ours, builds on this code:
+  the data loader and augmentations (ArcDataset), depth-first search decoding and
+  candidate selection. Their NOTICE file reads:
+
+    Kaggle ARC Prize 2024 Submission Code
+    Copyright 2024 Daniel Franzen and Jan Disselhoff
+
+NVARC (Ivan Sorokin and Jean-François Puget)
+  Kaggle notebook sorokin/arc2-qwen3-unsloth-flash-lora-batch4-queue (version 10),
+  released on Kaggle under the Apache License 2.0. Our notebooks run its per-task
+  test-time training, four-GPU worker queue, kgmon scorer and Qwen formatter.
+  Nothing is copied from NVARC's GitHub repository (github.com/1ytic/NVARC), which
+  carries no licence.
+
+kaiserm
+  Kaggle notebook kaiserm/nvarc-winning-solution-2025-4xl4s (version 2), the public
+  2026 port of NVARC's notebook, with seven data-path lines changed. Our notebooks
+  are forks of it.
+
+
+Models, data and packages used but not included
+-----------------------------------------------
+
+sorokin/qwen3_4b_grids15_sft139 (Kaggle Models, Apache 2.0)
+  NVARC's checkpoint, trained from Qwen3-4B (Qwen team, Apache 2.0). Every
+  notebook loads it.
+
+sorokin/pip-install-unsloth-flash-patch (Kaggle notebook by NVARC)
+  Attached to every notebook as an input that supplies its Python packages.
+  None of its code is copied here.
+
+ARC-GEN (Michael D. Moffitt, https://github.com/google/ARC-GEN, Apache 2.0;
+arXiv:2511.00162)
+  kaggle_kernel/arc_agi2_sft_syn trains on tasks sampled from the ARC-GEN-100K
+  dataset (Kaggle dataset arcgen100k/the-arc-gen-100k-dataset, Apache 2.0).
+
+ARC-AGI-2 tasks
+  Kaggle competition arc-prize-2026-arc-agi-2; the public tasks are also at
+  https://github.com/arcprize/arc-agi-2 (Apache 2.0). Not redistributed here.

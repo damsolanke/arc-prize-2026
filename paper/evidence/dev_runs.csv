@@ -1,0 +1,7 @@
+kernel,configuration,sft_data,dev_score_of_16,solved_outputs,tasks_finished,mean_seconds_per_task,tasks_hitting_1200s_cap,workers_reporting_adapter_merge
+arc-agi-2-nvarc-4b-l4x4,"base, wider-search variant v5 (DFS cutoff 0.15; not submitted)",none,2.33,135a2760_0 1818057f_0 1ae2feb7_2,16,783.9,195c6913 221dfab4 269e22fb,0
+arc-agi-2-sft-infer,train adapter,train (1000),2.33,135a2760_0 1818057f_0 1ae2feb7_2,16,695.3,195c6913 221dfab4,4
+arc-agi-2-sft-infer-v2,"train, 3 colour permutations",train x 3 colour permutations,2.33,135a2760_0 1818057f_0 1ae2feb7_2,16,696.7,195c6913 221dfab4,4
+arc-agi-2-sft-infer-v3,train + eval adapter (submitted system),train + eval (1120),2.33,135a2760_0 1818057f_0 1ae2feb7_2,16,682.5,195c6913 221dfab4,4
+arc-agi-2-sft-infer-syn,train + eval + ARC-GEN adapter,train + eval + 1197 ARC-GEN,3.33,135a2760_0 1818057f_0 1ae2feb7_2 20270e3b_1 20a9e565_0,16,663.9,195c6913 221dfab4,4
+arc-agi-2-sft-infer-evup,train + eval x3 adapter,train + eval x 3,4.33,135a2760_0 142ca369_0 1818057f_0 1ae2feb7_2 20270e3b_0 20270e3b_1 20a9e565_0,16,698.4,195c6913 221dfab4,4

@@ -1,0 +1,30 @@
+ref,submitted_utc,kernel,script_version_id,system,sft_data,public_score,probe_of_16,note
+51783750,2026-04-16T23:33:51Z,arc-prize-2026-baseline-heuristic-ensemble,312190211,heuristic,none,0.00,,heuristic ensemble v2
+51787927,2026-04-17T05:12:21Z,arc-prize-2026-baseline-heuristic-ensemble,312217394,heuristic,none,0.00,,heuristic ensemble v3
+51979728,2026-04-23T22:51:07Z,arc-prize-2026-baseline-heuristic-ensemble,312512364,heuristic,none,0.00,,heuristic ensemble v11
+53780259,2026-06-17T15:22:09Z,arc-agi-2-nvarc-4b-baseline,327950122,t4,none,10.42,,public T4 settings on 2 x T4
+53790200,2026-06-18T00:01:42Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,28.06,2.33,base system first run (kernel v4)
+53841875,2026-06-19T08:31:09Z,arc-agi-2-sft-infer,328557646,sft_train,train (1000),28.33,2.33,June sweep single run
+53863350,2026-06-20T00:04:33Z,arc-agi-2-sft-infer-v2,328688887,sft_aug3,train x 3 colour permutations,26.39,2.33,June sweep single run
+53895939,2026-06-21T00:00:08Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),29.86,2.33,SFT system first run (kernel v1)
+53927991,2026-06-22T00:17:47Z,arc-agi-2-sft-infer-syn,329309802,sft_syn,train + eval + 1197 ARC-GEN,27.22,3.33,June sweep single run
+53960956,2026-06-23T00:07:29Z,arc-agi-2-sft-infer-evup,329539348,sft_evup,train + eval x 3,28.89,4.33,June sweep single run
+56763189,2026-10-02T01:39:51Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),31.11,,identical rerun
+56784515,2026-10-03T00:02:25Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,31.39,,identical rerun
+56809323,2026-10-04T00:04:33Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),31.11,,identical rerun
+56836802,2026-10-05T00:06:57Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,29.86,,identical rerun
+56864607,2026-10-06T00:04:11Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),28.06,,identical rerun
+56915744,2026-10-07T16:07:02Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,27.78,,identical rerun
+56925138,2026-10-08T00:04:06Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),31.39,,identical rerun
+56979913,2026-10-09T00:06:13Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,27.64,,identical rerun
+57024422,2026-10-10T00:03:20Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),30.97,,identical rerun
+57055835,2026-10-11T00:05:28Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,29.31,,identical rerun
+57088572,2026-10-12T00:02:41Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),28.47,,identical rerun
+57122970,2026-10-13T00:02:08Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,29.31,,identical rerun
+57160098,2026-10-14T00:04:24Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),28.19,,identical rerun
+57199052,2026-10-15T00:06:33Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,29.72,,identical rerun
+57247731,2026-10-16T00:03:41Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),30.14,,identical rerun
+57287810,2026-10-17T00:06:12Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,30.56,,identical rerun
+57330261,2026-10-18T00:03:19Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),27.78,,identical rerun
+57373651,2026-10-19T00:05:27Z,arc-agi-2-nvarc-4b-l4x4,327994206,base,none,29.72,,identical rerun
+57413553,2026-10-20T00:02:35Z,arc-agi-2-sft-infer-v3,328952350,sft,train + eval (1120),31.39,,identical rerun

@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Clone ARC-AGI-2 data
+        run: |
+          git clone --depth=1 https://github.com/arcprize/arc-agi-2 reference/arc-agi-v2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check src/ tests/
+      - name: Test
+        run: pytest -v tests/
+      - name: Baseline smoke run
+        run: python scripts/run_baseline.py

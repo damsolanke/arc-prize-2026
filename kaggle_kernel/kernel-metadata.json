@@ -1,0 +1,15 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/arc-prize-2026-baseline-heuristic-ensemble",
+  "title": "ARC Prize 2026 Baseline (Heuristic Ensemble)",
+  "code_file": "arc_prize_2026_baseline.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "competition_sources": ["arc-prize-2026-arc-agi-2"],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
