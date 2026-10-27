@@ -59,7 +59,7 @@ python scripts/sdk_kaggle.py push kaggle_kernel/arc_agi2_sft_infer_v3    # dev m
 python scripts/sdk_kaggle.py submit arc-agi-2-sft-infer-v3 1 "rerun"     # one submission per UTC day
 ```
 
-The submitted SFT system is public on Kaggle as [arc-agi-2-sft-infer-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-infer-v3?scriptVersionId=328952350), with its adapter from [arc-agi-2-sft-4b-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-4b-v3). [`paper/reproduce.md`](paper/reproduce.md) maps every number in the paper to a data file, a command or a kernel version.
+The submitted SFT system is the Kaggle notebook [arc-agi-2-sft-infer-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-infer-v3?scriptVersionId=328952350), with its adapter from [arc-agi-2-sft-4b-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-4b-v3). Kaggle keeps notebooks attached to a running competition private, so both become public when the competition closes on 2 November 2026; until then their code is in `kaggle_kernel/arc_agi2_sft_infer_v3` and `kaggle_kernel/arc_agi2_sft_v3` here. [`paper/reproduce.md`](paper/reproduce.md) maps every number in the paper to a data file, a command or a kernel version.
 
 Our heuristic solvers in `src/` run on the public ARC-AGI-2 tasks:
 
