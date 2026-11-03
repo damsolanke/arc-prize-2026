@@ -2,9 +2,9 @@
 
 [![CI](https://github.com/damsolanke/arc-prize-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/damsolanke/arc-prize-2026/actions/workflows/ci.yml)
 
-Code, run records and statistics behind our ARC Prize 2026 entry: an NVARC-style system on the ARC-AGI-2 Kaggle leaderboard, and the Paper Track paper "One score per day: rerun noise and contaminated dev checks in an NVARC-style ARC-AGI-2 system".
+Code, run records and statistics behind our ARC Prize 2026 entry: an NVARC-style system on the ARC-AGI-2 Kaggle leaderboard, and the Paper Track paper "One score per day: rerun noise and contaminated dev checks on ARC-AGI-2".
 
-**Result.** Our best public score is 31.39, reached by three runs of unchanged kernels on 3, 8 and 20 October 2026. On 3 October that placed 376th of 2,377 teams, 51.67 points behind the leader (83.06) and 8.19 points short of eighth place, the last paid one. By 26 October other teams had moved past us, and the same score ranked 603rd of 3,390. We claim no new solver. Private scores arrive after the competition closes on 2 November 2026.
+**Result.** Our best public score is 31.39, reached by three runs of unchanged kernels on 3, 8 and 20 October 2026. On 3 October that placed 376th of 2,377 teams, 51.67 points behind the leader (83.06) and 8.19 points short of eighth place, the last paid one. On the final public leaderboard, after the 2 November close, 208 of the 3,627 teams had 31.39, listed 630th to 837th; ours was 732nd. First place had 88.06 and eighth 78.89. We claim no new solver. Private scores had not been published when we checked on 3 November 2026.
 
 <p align="center"><img src="paper/figures/cover.png" alt="Public scores of identical reruns of the base and SFT systems, next to the June fine-tuning sweep" width="820"></p>
 
@@ -59,7 +59,7 @@ python scripts/sdk_kaggle.py push kaggle_kernel/arc_agi2_sft_infer_v3    # dev m
 python scripts/sdk_kaggle.py submit arc-agi-2-sft-infer-v3 1 "rerun"     # one submission per UTC day
 ```
 
-The submitted SFT system is the Kaggle notebook [arc-agi-2-sft-infer-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-infer-v3?scriptVersionId=328952350), with its adapter from [arc-agi-2-sft-4b-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-4b-v3). Kaggle keeps notebooks attached to a running competition private, so both become public when the competition closes on 2 November 2026; until then their code is in `kaggle_kernel/arc_agi2_sft_infer_v3` and `kaggle_kernel/arc_agi2_sft_v3` here. [`paper/reproduce.md`](paper/reproduce.md) maps every number in the paper to a data file, a command or a kernel version.
+The submitted SFT system is the Kaggle notebook [arc-agi-2-sft-infer-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-infer-v3?scriptVersionId=328952350), with its adapter from [arc-agi-2-sft-4b-v3, version 1](https://www.kaggle.com/code/adesolanke/arc-agi-2-sft-4b-v3). Both notebooks were made public on 3 November 2026, the day after the competition closed; their code is also in `kaggle_kernel/arc_agi2_sft_infer_v3` and `kaggle_kernel/arc_agi2_sft_v3` here. [`paper/reproduce.md`](paper/reproduce.md) maps every number in the paper to a data file, a command or a kernel version.
 
 Our heuristic solvers in `src/` run on the public ARC-AGI-2 tasks:
 
